@@ -1,0 +1,39 @@
+{% extends 'blog/bbase.html' %}
+
+{% block content %}
+    <div class="main">
+    
+        {% for post in posts.object_list %}
+        <div id="post">
+           <ul>
+             <li><div class="title"><a href="{% url blog.views.post post.pk %}">{{ post.title }}</a></div></li>
+             <li> <div class="time">{{ post.created }}</div> </li>
+             <li> <div class="body">{{ post.body|linebreaks }}</div> </li>
+             <li> <div class="commentlink"><a href="{% url blog.views.post post.pk %}">Comments</a></div> </li>
+           </ul>   
+        </div>
+        {% endfor %}
+   
+        {% if posts.object_list and posts.paginator.num_pages > 1 %}
+        <div class="pagination" style="margin-top: 20px; margin-left: -20px; ">
+            <span class="step-links">
+                {% if posts.has_previous %}
+                    <a href= "?page={{ posts.previous_page_number }}">newer entries &lt;&lt; </a>
+                {% endif %}
+                
+                
+                <span class="current">
+                    &nbsp;Page {{ posts.number }} {{ posts.paginator.num_pages }}
+                </span>
+                
+                {% if posts.has_next %}
+                    <a href="?page={{ posts.next_page_number }}"> &gt;&gt; starši příspěvky</a>
+                {% endif %}
+            </span>
+        </div>
+        {% endif %}
+    
+    </div>
+    
+{% endblock %}
+        

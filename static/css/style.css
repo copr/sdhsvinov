@@ -1,0 +1,248 @@
+
+ /*
+h1 { font-weight: normal; }
+h2 { font-weight: bold; }
+h3 { font-style: italic; font-weight: normal; }
+h4 { font-style: italic; font-weight: bold; }
+jmeno, prijmeni, prezdivka, pozice, tym, obrazek
+ 
+/*
+a { color: #ff0000; }
+a:hover { color: #00ff00; }
+*/
+
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    box-shadow: 10px 10px 20px #000;
+    }
+pre {
+    white-space: -pre-wrap;
+    white-space: pre-wrap;
+    }
+.des{
+    margin: 5px;
+    float: left;
+    width: 150px;
+    height: 150px;
+    }
+.clen_kolektiv { 
+    float: left;
+    width: 150px;
+    height: 200px;
+    margin-right: 10px;
+    }
+    
+#clen {
+    float: left;
+    background: rgba(58, 40, 15, 0.54); 
+    width: 650px;
+    text-align: left; 
+    padding: 20px;
+    margin-bottom: 2px;
+    
+    
+}
+    
+.title {
+    color: blue;
+}
+
+.dummy {
+    visibility: hidden;
+    width: 1000px;
+    height: 16px; 
+   } 
+    
+#cform {
+    background: rgba(58, 40, 15, 0.54); 
+    margin-top: 5px;
+    width: 650px;
+    
+    
+    }
+
+#comments {
+    margin-top: 5px;
+}    
+
+.title { 
+    margin-top: 5px;
+    font-size: 1.5em;
+   
+    }
+    
+.title a:visited,a{
+    color:white;
+    }
+
+.co {
+    
+    background: rgba(58, 40, 15, 0.54);
+    min-height: 50px;    
+    width: 500px;
+    margin-bottom: 5px;
+    text-align: left;
+    
+    }
+
+
+#menu a{
+    float: left;
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: rgba(58, 40, 15, 0.54); 
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+
+
+#content_sekce { 
+    width: 650px;
+    min-height: 500px;
+    background: rgba(58, 40, 15, 0.54); 
+    margin-right: 300px;
+    text-align: left;
+    padding: 20px;
+}
+
+#menu { 
+    width: 689px;
+  /*  margin-top: 10px; */
+    margin-left: 168px;
+    margin-right: 300px;
+}
+
+#player {
+    background: rgba(58, 40, 15, 0.54); 
+    padding: 20px;
+   }
+
+.logo {
+    margin-bottom: 30px;     
+    margin-top: 70px;  
+    margin-right: 300px;
+   } 
+body {
+    position: relative;
+    font-family: champagne;
+    color: white;
+    width: 1280px; /*1280px */
+    text-align: center; /* for IE */
+	 /* for the rest */
+    background-image: url("http://sdhsvinov.cz/static/pozadi.png");
+    /*background-size: 0px 100%;*/
+    background-repeat: no-repeat;
+    background-position: top;
+    margin: 0;
+    background-color: #524a3f;
+   /* min-width: 1280px;*/
+    height: 100%; 
+    background-attachment: fixed;
+  /*  box-shadow:  0 0 0 0px #524a3f,10px -15px 20px #000; */
+    padding: 0;
+
+}
+
+footer {
+    clear: both;
+    width: 100%;
+}
+
+#post_l {
+    background: rgba(58, 40, 15, 0.54); 
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 20px;
+    width: 650px;
+    }
+
+.fb-comments {
+    margin-top: 60px;
+  
+    }
+
+#post {
+    background: rgba(58, 40, 15, 0.54); 
+    margin-bottom: 2px;
+    
+  /*  margin-right: 700px; */
+   
+    width: 650px;
+    position: relative;
+    float: left;
+    text-align: left;
+    padding: 20px;
+   
+}
+
+.title {
+     margin-bottom: 20px;
+    }
+
+#nav_cont {
+    float: left;
+    margin-left: 17px;
+    min-height: 500px;
+    margin-right: 4400px;
+}
+
+
+#Fotograf{
+    margin: 5px 5px 5px 5px;
+    padding-bottom: 10px;
+    float: left;
+    }
+
+#content {
+    
+    margin-left: 150px;
+    float: none;
+}
+
+ul {
+    margin: 0px;
+    }
+
+nav {
+    margin-top: 15px;
+    margin-left: 1px;
+    float: left;
+    position: fixed; 
+    text-align: left;
+    z-index: 1;
+    }
+
+a:active {
+    outline: none;
+    }
+
+a:focus {
+    -moz-outline-style: none;
+    }
+
+
+#preload1 {
+        background: url(http://sdhsvinov.cz/static/images/menu/home/HOME1.png) no-repeat -9999px -9999px;
+}
+
+#preload2 {
+        background: url(http://sdhsvinov.cz/static/images/menu/hasici/hasici_rozbalene.png) no-repeat -9999px -9999px;
+}
+ 
+ #preload3 {
+        background: url(http://sdhsvinov.cz/static/images/menu/mladez/mladez_rozbalene.png) no-repeat -9999px -9999px;
+}
+#preload4 {
+        background: url(http://sdhsvinov.cz/static/images/menu/muzi/muzi_rozbalene.png) no-repeat -9999px -9999px;
+}
+#preload5 {
+        background: url(http://sdhsvinov.cz/static/images/menu/historie/historie_rozbalene.png) no-repeat -9999px -9999px;
+}
+#preload6 {
+        background: url(http://sdhsvinov.cz/static/images/menu/ostatni/OSTATN.png) no-repeat -9999px -9999px;
+} 

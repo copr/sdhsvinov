@@ -1,0 +1,18 @@
+{% extends 'blog/bbase.html' %}
+
+{% block nav-global %}
+    <ul>
+    {% for link, link_class, link_style, link_name in links %}
+        <li><a href="{{ link }} " class="{{ link_class }}" style="{{ link_style }}"  >{{ link_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% endblock %}
+
+
+    {% block content %} 
+    <div id="content_sekce">
+     {% autoescape off %}   
+        {{ obsah }}
+     {% endautoescape %}  
+    </div>
+    {% endblock %}

@@ -1,0 +1,66 @@
+{% extends 'blog/bbase.html' %}
+
+
+{% block content %}
+<div id="post_l">
+   
+    <div class="title">{{ post.title }}</div>
+ 
+    <ul>
+        <div class="time">{{ post.created }}</div>
+        <div class="body">{{ post.body|linebreaks }}</div>
+         
+    </ul>
+</div>
+
+<!-- Comments -->
+
+<!--
+<div id="comments">
+
+
+{% for comment in comments %}
+    <div class="co">
+        <div class="time">{{ comment.created }} | {{ comment.author }}</div>
+        <div class="body">{{ comment.body|linebreaks }}</div>
+    </div>
+{% endfor %}
+
+</div>
+-->
+
+
+
+
+<!-- Comment Form -->
+
+ 
+
+<div class="fb-comments" 
+data-href="{{ SITE_URL }}{{ link }}/"
+
+ data-width="650" data-num-posts="5" 
+ data-colorscheme="dark"></div>
+ 
+<!--
+  
+
+
+
+
+ <div id="cform">
+    <form action="{% url blog.views.add_comment post.id %}" method="POST">{% csrf_token %}
+        <div id="addc">Add a comment</div> 
+    
+        Name: {{ form.author }}
+        <p>{{ form.body|linebreaks }}</p>
+    
+    <div id="submit"><input type="submit" value="Submit"></div>
+    
+    </form>
+</div>
+
+  -->
+ 
+
+{% endblock %}

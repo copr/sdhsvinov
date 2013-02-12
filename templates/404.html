@@ -1,0 +1,14 @@
+{% extends 'blog/bbase.html' %}
+
+{% block nav-global %}
+    {% for link, link_class, link_style, link_name in links %}
+        <ul><a href="{{ link }} " class="{{ link_class }}" style="{{ link_style }}"  >{{ link_name }}</a></ul>
+    {% endfor %}
+{% endblock %}
+
+
+    {% block content %}
+    <div id="content_sekce">
+            <p>Stránka se nepovedla najít nebo neexistuje.</p> 
+    </div>
+    {% endblock %}
