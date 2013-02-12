@@ -15,7 +15,6 @@ html {
     overflow-y: scroll;
     overflow-x: hidden;
     height: 100%;
-    box-shadow: 10px 10px 20px #000;
     }
 pre {
     white-space: -pre-wrap;
@@ -120,11 +119,9 @@ pre {
 #player {
     background: rgba(58, 40, 15, 0.54); 
     padding: 20px;
-   }
+    }
 
 .logo {
-    margin-bottom: 30px;     
-    margin-top: 70px;  
     margin-right: 300px;
    } 
 body {
@@ -143,14 +140,9 @@ body {
    /* min-width: 1280px;*/
     height: 100%; 
     background-attachment: fixed;
-  /*  box-shadow:  0 0 0 0px #524a3f,10px -15px 20px #000; */
+    box-shadow:  0 0 0 0px #524a3f,10px -15px 20px #000;
     padding: 0;
 
-}
-
-footer {
-    clear: both;
-    width: 100%;
 }
 
 #post_l {
@@ -244,5 +236,5 @@ a:focus {
         background: url(http://sdhsvinov.cz/static/images/menu/historie/historie_rozbalene.png) no-repeat -9999px -9999px;
 }
 #preload6 {
-        background: url(http://sdhsvinov.cz/static/images/menu/ostatni/OSTATN.png) no-repeat -9999px -9999px;
+        background: url('http://sdhsvinov.cz/static/images/menu/ostatni/OSTATN.png') no-repeat -9999px -9999px;
 } 
