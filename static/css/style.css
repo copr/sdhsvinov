@@ -17,6 +17,10 @@ html {
     overflow-x: hidden;
     height: 100%;
     }
+
+.hidden{
+    display: none;
+    }
 pre {
     white-space: -pre-wrap;
     white-space: pre-wrap;
