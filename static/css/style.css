@@ -137,7 +137,7 @@ body {
     position: relative;
     color: white;
     width: 1280px; /*1280px */
-    text-align: center;/* for IE */
+    text-align: justify;/* for IE */
 	 /* for the rest */
     background-image: url("http://sdhsvinov.cz/static/pozadi.jpg");
     /*background-size: 0px 100%;*/
@@ -199,7 +199,7 @@ body {
     }
 
 #content {
-    text-align: left;
+    text-align: justify;
     margin-left: 150px;
 }
 
