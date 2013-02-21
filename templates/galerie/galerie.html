@@ -10,6 +10,7 @@
                 onMouseOver="change('{{ Fotograf.jmeno }}', '150', '170', '/media/{{ Fotograf.obrazek_hover }}')" 
                 onMouseOut="change('{{ Fotograf.jmeno }}', '150', '150', '/media/{{ Fotograf.obrazek}}')" /></a>
             </div>
+            <img class=hidden src="/media/{{ Fotograf.obrazek_hover }}" />
         {% endfor %}
     {% endif %}
     </div>

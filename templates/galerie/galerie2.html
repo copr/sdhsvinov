@@ -6,7 +6,8 @@
     {% for Obrazek in Obrazky %}
         <div id ="Img">
         
-         <a href ="/media/{{ Obrazek.obrazek }}" rel="lightbox[hasici]"><img class="des" src="/media/{{ Obrazek.obrazek }}" width="150px" height="150px" /></a>
+                <a href ="/media/{{ Obrazek.obrazek }}" rel="lightbox[{{ Obrazek.kategorie }}]">
+                <img class="des" src="/media/{{ Obrazek.obrazek }}" width="150px" height="150px" /></a>
     
         </div>
     {% endfor %}
