@@ -46,19 +46,22 @@ stranka={
             
 
 def index(request, id_sekce, id):
-     
     if id == '2' and id_sekce == '0':
-        Obrazky = Obrazek.objects.all()
+        Obrazky = Obrazek.objects.all().filter(kategorie = '1')
         return render_to_response('galerie/galerie2.html', dict(user=request.user, links = links[int(id_sekce)], Obrazky = Obrazky))
+    if id == '3' and id_sekce == '1':
+        Obrazky = Obrazek.objects.all().filter(kategorie = '2')
+        return render_to_response('galerie/galerie2.html', dict(user=request.user, links = links[int(id_sekce)], Obrazky = Obrazky))
+
     if id == '3' and id_sekce == '2':
         fotografove = Fotograf.objects.all()
         return render_to_response('galerie/galerie.html', dict(user=request.user, links = links[int(id_sekce)], Fotografove = fotografove))
 
     if id == '4' and id_sekce == '2':
         return render_to_response('menu/video.html', dict(user=request.user, links = links[int(id_sekce)]))
-    
+
     if id == '0' and (id_sekce == '0' or id_sekce == '1' or id_sekce == '2'):
-        
+
         category_dict={ 
                         '0': '1',
                         '1': '2',
