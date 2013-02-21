@@ -42,7 +42,6 @@ pre {
     float: left;
     background: rgba(58, 40, 15, 0.54); 
     width: 650px;
-    text-align: left; 
     padding: 20px;
     margin-bottom: 2px;
     
@@ -87,7 +86,6 @@ pre {
     min-height: 50px;    
     width: 500px;
     margin-bottom: 5px;
-    text-align: left;
     
     }
 
@@ -95,7 +93,7 @@ pre {
 #menu a{
     float: left;
     height: 100%; 
-    padding-top: 15px;
+    padding-top: 17px;
     padding-bottom: 15px;
     background: rgba(58, 40, 15, 0.54); 
     color: white;
@@ -114,13 +112,12 @@ pre {
     min-height: 500px;
     background: rgba(58, 40, 15, 0.54); 
     margin-right: 300px;
-    text-align: left;
     padding: 20px;
+    text-align: justify;
 }
 
 #menu {
     width: 689px;
-    font-size: 1.3em;
     font-family: champagne;
   /*  margin-top: 10px; */
     margin-left: 168px;
@@ -140,7 +137,7 @@ body {
     position: relative;
     color: white;
     width: 1280px; /*1280px */
-    text-align: center; /* for IE */
+    text-align: center;/* for IE */
 	 /* for the rest */
     background-image: url("http://sdhsvinov.cz/static/pozadi.jpg");
     /*background-size: 0px 100%;*/
@@ -149,17 +146,18 @@ body {
     margin: 0 auto;
     background-color: #524a3f;
    /* min-width: 1280px;*/
-    font-family: Arial,Helvetica,sans-serif; 
+    font-family: Arial,Helvetica,sans-serif;
+    line-height: 120%;
+    display: block;
     height: 100%; 
     background-attachment: fixed;
-    padding: 0;
+    padding: 0 auto;
 
 }
 
 #post_l {
     background: rgba(58, 40, 15, 0.54); 
     margin-bottom: 20px;
-    text-align: left;
     padding: 20px;
     width: 650px;
     }
@@ -178,7 +176,6 @@ body {
     width: 650px;
     position: relative;
     float: left;
-    text-align: left;
     padding: 20px;
    
 }
@@ -202,9 +199,8 @@ body {
     }
 
 #content {
-    
+    text-align: left;
     margin-left: 150px;
-    float: none;
 }
 
 ul {
@@ -215,8 +211,8 @@ nav {
     margin-top: -72px;
     float: left;
     position: fixed; 
-    text-align: left;
     z-index: 1;
+    text-align: left;
     }
 
 a:active {
