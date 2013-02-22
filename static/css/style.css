@@ -11,7 +11,25 @@ a { color: #ff0000; }
 a:hover { color: #00ff00; }
 */
 
+.has {
+    display: block;
+    background-image: url("/images/menu/hasici/hasici.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    -webkit-transition-property: width;
+    -webkit-transition-duration: 0.1s ;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-transition-timing-function: linear; 
+    width: 61px;
+    height: 49px;
+    }
 
+.has:hover {
+    background-image: url("/images/menu/hasici/hasici_rozbalene.jpeg");
+    background-repeat: no-repeat;
+    width: 200px;
+    background-position: center top;
+    } 
 html {
     overflow-y: scroll;
     overflow-x: hidden;
@@ -27,9 +45,9 @@ pre {
     }
 .des{
     margin: 5px;
-    float: left;
     width: 150px;
     height: 150px;
+    float left;
     }
 .clen_kolektiv { 
     float: left;
@@ -79,11 +97,20 @@ pre {
 .title a:visited,a{
     color:white;
     }
+#content_galerie {
+    float: left;
+    display: block;
+    width: 650px;
+    background: rgba(58, 40, 15, 0.54);
+    min-height: 500px;
+    padding: 20px;
+    overflow: hidden;
+    }
 
 .co {
-    
-    background: rgba(58, 40, 15, 0.54);
+    float: left; 
     min-height: 50px;    
+    background: rgba(58, 40, 15, 0.54);
     width: 500px;
     margin-bottom: 5px;
     
@@ -109,11 +136,11 @@ pre {
 
 #content_sekce { 
     width: 650px;
-    min-height: 500px;
     background: rgba(58, 40, 15, 0.54); 
     margin-right: 300px;
     padding: 20px;
-    text-align: justify;
+    min-height: 500px;
+    text-align: left;
 }
 
 #menu {
@@ -152,7 +179,6 @@ body {
     height: 100%; 
     background-attachment: fixed;
     padding: 0 auto;
-
 }
 
 #post_l {
@@ -200,8 +226,9 @@ body {
     }
 
 #content {
-    text-align: justify;
     margin-left: 150px;
+    text-align: left;
+    height: 100%;
 }
 
 ul {
