@@ -58,7 +58,7 @@ pre {
     
 #clen {
     float: left;
-    background: rgba(58, 40, 15, 0.54); 
+    background: rgba(58, 40, 15, 0.8); 
     width: 650px;
     padding: 20px;
     margin-bottom: 2px;
@@ -66,8 +66,9 @@ pre {
     
 }
     
-.title {
-    color: blue;
+.title a {
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .dummy {
@@ -77,7 +78,7 @@ pre {
    } 
     
 #cform {
-    background: rgba(58, 40, 15, 0.54); 
+    background: rgba(58, 40, 15, 0.8); 
     margin-top: 5px;
     width: 650px;
     
@@ -90,7 +91,7 @@ pre {
 
 .title { 
     margin-top: 5px;
-    font-size: 1.5em;
+    font-size: 120%;
    
     }
     
@@ -101,12 +102,15 @@ pre {
     float: left;
     display: block;
     width: 650px;
-    background: rgba(58, 40, 15, 0.54);
+    background: rgba(58, 40, 15, 0.8);
     min-height: 500px;
     padding: 20px;
     overflow: hidden;
     }
-
+#content_galerie a{
+    font-size: 0%;
+    }
+    
 .co {
     float: left; 
     min-height: 50px;    
@@ -122,7 +126,7 @@ pre {
     height: 100%; 
     padding-top: 17px;
     padding-bottom: 15px;
-    background: rgba(58, 40, 15, 0.54); 
+    background: rgba(58, 40, 15, 0.8); 
     color: white;
     text-decoration: none;
     margin-bottom: 5px;
@@ -136,7 +140,7 @@ pre {
 
 #content_sekce { 
     width: 650px;
-    background: rgba(58, 40, 15, 0.54); 
+    background: rgba(58, 40, 15, 0.8); 
     margin-right: 300px;
     padding: 20px;
     min-height: 500px;
@@ -152,7 +156,7 @@ pre {
 }
 
 #player {
-    background: rgba(58, 40, 15, 0.54); 
+    background: rgba(58, 40, 15, 0.8); 
     padding: 20px;
     }
 
@@ -182,7 +186,7 @@ body {
 }
 
 #post_l {
-    background: rgba(58, 40, 15, 0.54); 
+    background: rgba(58, 40, 15, 0.8); 
     margin-bottom: 20px;
     padding: 20px;
     width: 650px;
@@ -194,7 +198,7 @@ body {
     }
 
 #post {
-    background: rgba(58, 40, 15, 0.54); 
+    background: rgba(58, 40, 15, 0.8); 
     margin-bottom: 2px;
     
   /*  margin-right: 700px; */
