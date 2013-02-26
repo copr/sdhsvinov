@@ -209,10 +209,12 @@ body {
     padding: 20px;
    
 }
-
+.time{
+     margin-bottom: 20px;
+     font-size: 80%;
+     }
 .title {
      color: white;
-     margin-bottom: 20px;
     }
 
 #nav_cont {
