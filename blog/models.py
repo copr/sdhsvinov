@@ -3,6 +3,7 @@ from django.db import models
 from django.contrib import admin
 from django.forms import ModelForm
 from django.contrib.auth.models import User
+from tinymce.widgets import TinyMCE
 
 CATEGORIES=(
             ('1', 'hasici'),
@@ -22,9 +23,18 @@ class Post(models.Model):
 
     def __unicode__(self):
         return self.title
-        
+#class PostForm(forms.ModelForm):
+ #   formfield_overrides = forms.CharField(widget=TinyMCE(attrs={'cols': 80,
+  #      'rows': 20})
+  #  class Meta:
+  #      model = Article
 class PostAdmin(admin.ModelAdmin):
     search_fields = ["title"]
+    #  form = ArticleForm
+  #  class Admin:
+  #    js = ('/static/javascript/tinymce/jscripts/tiny_mce/tiny_mce.js',
+  #           '/static/javascript/tinymce/jscripts/tiny_mce/textareas.js',
+  #           )
     
 class Comment(models.Model):
     created = models.DateTimeField(auto_now_add=True)
