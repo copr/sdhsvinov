@@ -6,13 +6,13 @@
     {% if Fotografove %}
         {% for Fotograf in Fotografove %}
             <div id ="Fotograf">
-                <a href ="{{ Fotograf.url }}"><img src="/media/{{ Fotograf.obrazek }}" id="{{ Fotograf.jmeno }}" width="150px" height="150px"
-                onMouseOver="change('{{ Fotograf.jmeno }}', '150', '170', '/media/{{ Fotograf.obrazek_hover }}')" 
-                onMouseOut="change('{{ Fotograf.jmeno }}', '150', '150', '/media/{{ Fotograf.obrazek}}')" /></a>
+                <a href ="{{ Fotograf.url }}"><img class =fotograf src="/media/{{ Fotograf.obrazek }}" id="{{ Fotograf.jmeno }}" width="150px" height="150px"
+                onMouseOver="change1('{{ Fotograf.jmeno }}', '/media/{{ Fotograf.obrazek_hover }}')" 
+                onMouseOut="change1('{{ Fotograf.jmeno }}', '/media/{{ Fotograf.obrazek}}')" /></a>
             </div>
             <img class=hidden src="/media/{{ Fotograf.obrazek_hover }}" />
-        {% endfor %}
+         {% endfor %}
     {% endif %}
     </div>
     
-{% endblock %}
+{% endblock %}  
