@@ -7,30 +7,30 @@ from galerie.models import *
 from django.core.exceptions import ObjectDoesNotExist
 links = (
             (
-                ('/0/0', 'aktuality_hasici', 'width: 33.33%', 'aktuality'),
-                ('/0/1', 'info_hasici', 'width: 33.33%', 'info'),
-                ('/0/2', 'foto_hasici', 'width: 33.33%', 'foto'),
+                ('/0/0', 'aktuality_hasici', 'width: 33.33%', 'AKTUALITY'),
+                ('/0/1', 'info_hasici', 'width: 33.33%', 'INFO'),
+                ('/0/2', 'foto_hasici', 'width: 33.33%', 'FOTO'),
             ),
             (
-                ('/1/0', 'aktuality_mladez', 'width: 20%', 'aktuality'),
-                ('/1/1', 'info_mladez', 'width: 20%', 'info'),
-                ('/1/2', 'kolektiv_mladez', 'width: 20%', 'kolektiv'),
-                ('/1/3', 'foto_mladez', 'width: 20%', 'foto'),
-                ('/1/4', 'download_mladez', 'width: 20%', 'download'),
+                ('/1/0', 'aktuality_mladez', 'width: 20%', 'AKTUALITY'),
+                ('/1/1', 'info_mladez', 'width: 20%', 'INFO'),
+                ('/1/2', 'kolektiv_mladez', 'width: 20%', 'KOLEKTIV'),
+                ('/1/3', 'foto_mladez', 'width: 20%', 'FOTO'),
+                ('/1/4', 'download_mladez', 'width: 20%', 'DOWNLOAD'),
             ),
             (
-                ('/2/0', 'muzi_aktuality', 'width: 20%', 'aktuality'),
-                ('/2/1', 'muzi_info', 'width: 20%', 'info'),
-                ('/2/2', 'muzi_kolektiv', 'width: 20%', 'kolektiv'),
-                ('/2/3', 'muzi_foto', 'width: 20%', 'foto'),
-                ('/2/4', 'muzi_video', 'width: 20%', 'video'),
+                ('/2/0', 'muzi_aktuality', 'width: 20%', 'AKTUALITY'),
+                ('/2/1', 'muzi_info', 'width: 20%', 'INFO'),
+                ('/2/2', 'muzi_kolektiv', 'width: 20%', 'KOLEKTIV'),
+                ('/2/3', 'muzi_foto', 'width: 20%', 'FOTO'),
+                ('/2/4', 'muzi_video', 'width: 20%', 'VIDEO'),
             ),
             (
-                ('/3/0', 'info_historie', 'width: 50%', 'info'),
-                ('/3/1', 'statistiky_historie', 'width: 50%', 'statistiky'),
+                ('/3/0', 'info_historie', 'width: 50%', 'INFO'),
+                ('/3/1', 'statistiky_historie', 'width: 50%', 'STATISTIKY'),
             ),
             (
-                ('/4/0', 'odkazy', 'width: 100%', 'odkazy'),
+                ('/4/0', 'odkazy', 'width: 100%', 'ODKAZY'),
                
             ),
         )

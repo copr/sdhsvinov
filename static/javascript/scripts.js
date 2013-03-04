@@ -17,6 +17,10 @@ function change(id, width, height, src){
     document.getElementById(id).src = src;
     document.getElementById(id).width = width;
 }
+
+function change1(id, src){
+    document.getElementById(id).src = src;
+}
 // function change_bgr(id, class_name, color){
 
 var tridy= new Array(".info", ".kolektiv", ".aktuality", ".foto", ".video");	

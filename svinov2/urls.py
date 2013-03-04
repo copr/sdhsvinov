@@ -12,8 +12,9 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^(\d)/(\d)/', 'svinov2.views.index'),
     url(r'^2/2/', 'svinov2.views.index'),
+    url(r'^tinymce/', include('tinymce.urls')),
     url(r'(?:.*?/)?(?P<path>(css|images|javascript)/.+)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT }),
-    url(r'^media/(?P<path>.*)$', 'django.views.static.serve', { 'document_root': settings.MEDIA_ROOT, }),
+    # url(r'^media/(?P<path>.*)$', 'django.views.static.serve', { 'document_root': settings.MEDIA_ROOT, }),
 )
 
 urlpatterns += patterns('blog.views',

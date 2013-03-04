@@ -36,6 +36,9 @@ html {
     height: 100%;
     }
 
+.fotograf:hover {
+    height: 170px;
+    }
 .hidden{
     display: none;
     }
@@ -158,6 +161,7 @@ pre {
 #player {
     background: rgba(58, 40, 15, 0.8); 
     padding: 20px;
+    z-index: -5px;  
     }
 
 .logo {

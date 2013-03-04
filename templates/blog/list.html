@@ -8,7 +8,7 @@
            <ul>
              <li><div class="title"><a href="{% url blog.views.post post.pk %}">{{ post.title }}</a></div></li>
              <li> <div class="time">{{ post.created }}</div> </li>
-             <li> <div class="body">{{ post.body|linebreaks }}</div> </li>
+             <li> <div class="body">{{ post.body|safe }}</div> </li>
              <li> <div class="commentlink"><a href="{% url blog.views.post post.pk %}">Comments</a></div> </li>
            </ul>   
         </div>

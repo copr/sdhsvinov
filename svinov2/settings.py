@@ -30,6 +30,15 @@ DATABASES = {
     }
 }
 
+#TINYMCE_SPELLCHECKER = True
+#TINYMCE_COMPRESSOR = True
+TINYMCE_DEFAULT_CONFIG = {
+    'theme': "advanced",
+    # 'plugins': "spellchecker",
+    #   'theme_advanced_buttons3_add': "|,spellchecker",
+    'entity_encoding': 'raw',
+}
+
 SITE_ROOT = '/home/apps/app_00021/app'
 
 # Local time zone for this installation. Choices can be found here:
@@ -90,7 +99,7 @@ STATICFILES_FINDERS = (
     # os.path.join(SITE_ROOT, 'templates'), vypina css u admina
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-#    'django.contrib.staticfiles.finders.DefaultStorageFinder',
+    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 
 # Make this unique, and don't share it with anybody.
@@ -137,6 +146,7 @@ INSTALLED_APPS = (
     'blog',
     'kolektiv',
     'galerie',
+    'tinymce',
     # 'basic.blog',
     # 'basic.comments',
     # 'django.contrib.comments',
