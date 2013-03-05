@@ -30,11 +30,10 @@ links = (
                 ('/3/1', 'statistiky_historie', 'width: 50%', 'STATISTIKY'),
             ),
             (
-                ('/4/0', 'odkazy', 'width: 100%', 'ODKAZY'),
-               
+                ('/4/0', 'odkazy', 'width: 50%', 'ODKAZY'),
+                ('/4/1', 'kalendar', 'width: 50%', 'KALENDÁŘ'),
             ),
         )
-        
 stranka={
             '01': '0',
             '11': '1',
@@ -43,9 +42,10 @@ stranka={
             '30': '4',
             '40': '5',
         }
-            
 
 def index(request, id_sekce, id):
+    if id_sekce == '4' and id == '1':
+        return render_to_response("kalendar/kalendar.html", dict(user=request.user, links=links[int(id_sekce)]))
     if id == '2' and id_sekce == '0':
         Obrazky = Obrazek.objects.all().filter(kategorie = '1')
         return render_to_response('galerie/galerie2.html', dict(user=request.user, links = links[int(id_sekce)], Obrazky = Obrazky))
@@ -86,7 +86,7 @@ def index(request, id_sekce, id):
             posts = paginator.page(paginator.num_pages)
 
         return render_to_response("blog/list_mine.html", dict(posts=posts, user=request.user, links = links[int(id_sekce)]))
-
+   
     if id_sekce == '2' and id == '2':
         clenove = Clen_kolektivu.objects.all().filter(tym__contains=u'Muži')
         return render_to_response("kolektiv/kolektiv.html", dict(clenove = clenove, user=request.user, links = links[int(id_sekce)]))

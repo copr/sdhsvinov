@@ -21,7 +21,6 @@ function change(id, width, height, src){
 function change1(id, src){
     document.getElementById(id).src = src;
 }
-// function change_bgr(id, class_name, color){
 
 var tridy= new Array(".info", ".kolektiv", ".aktuality", ".foto", ".video");	
 
@@ -227,15 +226,30 @@ $(document).ready(function(){
             
         }
     );
-        
+     // /historie
+   
     $(".statistiky_historie").click(
         function(){
             $(this).css({"background": "#5e1f8c"});  
             $.cookies.set("vybrano", ".statistiky_historie");
         }
+    );
+    // odkazy
+    $(".kalendar").click(
+        function(){
+            $(this).css({"background": "rgb(56,38,144)"});  
+            $.cookies.set("vybrano", ".kalendar");
+        }
     ); 
     
-    // /historie
+   $(".odkazy").click(
+        function(){
+            $(this).css({"background": "rgb(56,38,144)"});  
+            $.cookies.set("vybrano", ".odkazy");
+        }
+    ); 
+    
+
     
     var cl = $.cookies.get("vybrano");
     
@@ -245,9 +259,13 @@ $(document).ready(function(){
     if($.cookies.get("aktualni_menu")== ".menu_mladez"){
         $(".menu_mladez").css({"background": "#97c113"});    
     }
-    
+
     if($.cookies.get("aktualni_menu")== ".menu_muzi"){
-        $(".menu_muzi").css({"background": "#9e1674"});    
+        $(".menu_muzi").css({"background": "rgb(158,22,116)"});    
+    }
+
+    if($.cookies.get("aktualni_menu")== ".menu_mladez"){
+        $(".menu_mladez").css({"background": "#97c113"});    
     }
     
     if($.cookies.get("aktualni_menu")== ".menu_hasici"){
@@ -350,8 +368,13 @@ $(document).ready(function(){
         $(".statistiky_historie").css({"background":"#5e1f8c" }); 
     }
     
-    // /historie
-    
+    //ostatni 
+    if(cl == ".kalendar"){
+        $(".kalendar").css({"background":"rgb(56,38,144)" }); 
+    }
+    if(cl == ".odkazy"){
+        $(".odkazy").css({"background":"rgb(56,38,144)" }); 
+    }
     // alert($.cookie("aktualni_menu"));
 }
 );
