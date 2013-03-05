@@ -11,7 +11,7 @@ from django.core.exceptions import ObjectDoesNotExist
 
 from blog.models import *
 
-links = [('5', 'seznam', '{{ STATIC_ROOT}}/images/menu/hasici/hasici.png', ''),]
+links = [('5', 'seznam', 'static/images/menu/hasici/hasici.png', ''),]
 
 
 def main(request):

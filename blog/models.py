@@ -19,7 +19,6 @@ class Post(models.Model):
     body = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
     category = models.CharField(max_length=20, choices=CATEGORIES)
-    author = models.ForeignKey(User)
 
     def __unicode__(self):
         return self.title
@@ -48,7 +47,7 @@ class Comment(models.Model):
 
 
 class CommentAdmin(admin.ModelAdmin):
-    display_fields = ["post", "author", "created"]
+    display_fields = ["post", "created"]
     
 
     
