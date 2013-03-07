@@ -11,6 +11,11 @@ POZICE = (
             (u'Béčkař', u'Béčkař'),
             (u'Rozdělovač', u'Rozdělovač'),
             (u'Proudař', u'Proudař'),
+            (u'Přípravka', u'Přípravka'),
+            (u'Mladší',u'Mladší'),
+            (u'Starší',u'Starší'),
+            (u'Mladší-Radní',u'Mladší-Radní'),
+            (u'Starší-Radní',u'Starší-Radní'),
         )
         
 
@@ -40,7 +45,7 @@ class Clen_kolektivu(models.Model):
     prezdivka = models.CharField(max_length=20, blank=True)
     pozice = models.CharField(max_length=20, choices=POZICE)
     tym = models.CharField(max_length=10, choices=TYM)
-    obrazek = models.ImageField(upload_to='photos/kolektiv')
+    obrazek = models.ImageField(upload_to='photos/kolektiv',blank=True)
 
     def __unicode__(self):
         return unicode("%s %s" % (self.jmeno, self.prijmeni))
