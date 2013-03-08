@@ -4,6 +4,7 @@
     <div class="main">
     
         {% for post in posts.object_list %}
+        {% if post.uvodni_strana %}
         <div id="post">
            <ul>
              <li><div class="title"><a href="{% url blog.views.post post.pk %}">{{ post.title }}</a></div></li>
@@ -12,6 +13,7 @@
              <li> <div class="commentlink"><a href="{% url blog.views.post post.pk %}">Celý článek</a></div> </li>
            </ul>   
         </div>
+        {% endif %}
         {% endfor %}
    
         {% if posts.object_list and posts.paginator.num_pages > 1 %}

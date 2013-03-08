@@ -147,6 +147,7 @@ INSTALLED_APPS = (
     'kolektiv',
     'galerie',
     'tinymce',
+    #'south',
     # 'basic.blog',
     # 'basic.comments',
     # 'django.contrib.comments',

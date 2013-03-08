@@ -17,7 +17,6 @@ POZICE = (
             (u'Mladší-Radní',u'Mladší-Radní'),
             (u'Starší-Radní',u'Starší-Radní'),
         )
-        
 
 
 TYM = (
@@ -25,7 +24,7 @@ TYM = (
         (u'Muži A', 'muzi a'),
         (u'Muži B', 'muzi b'),
        )
-       
+
 JMENA_CLANKU = (
             ('0', 'hasici_info'),
             ('1', 'mladez_info'),
@@ -38,7 +37,6 @@ JMENA_CLANKU = (
 
 pom = dict(JMENA_CLANKU)
 
-        
 class Clen_kolektivu(models.Model):
     jmeno = models.CharField(max_length=20)
     prijmeni = models.CharField(max_length=20)
@@ -56,7 +54,6 @@ class KolektivAdmin(admin.ModelAdmin):
 class Staticky_clanek(models.Model):
     jmeno = models.CharField(max_length=20, choices=JMENA_CLANKU)
     text = models.TextField()
-
     def __unicode__(self):
         return pom[self.jmeno]
 

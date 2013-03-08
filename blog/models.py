@@ -11,15 +11,15 @@ CATEGORIES=(
             ('3', 'muzi'),
 )
 
-input = '%Y-%m-%d',  
+input = '%Y-%m-%d',
 
 
-class Post(models.Model): 
+class Post(models.Model):
     title = models.CharField(max_length=60)
     body = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
     category = models.CharField(max_length=20, choices=CATEGORIES)
-
+    uvodni_strana = models.BooleanField(default=True)
     def __unicode__(self):
         return self.title
 #class PostForm(forms.ModelForm):
