@@ -22,11 +22,11 @@ links = (
                 ('/1/4', 'download_mladez', 'width: 20%', 'DOWNLOAD'),
             ),
             (
-                ('/2/0', 'muzi_aktuality', 'width: 20%', 'AKTUALITY'),
-                ('/2/1', 'muzi_info', 'width: 20%', 'INFO'),
-                ('/2/2', 'muzi_kolektiv', 'width: 20%', 'KOLEKTIV'),
-                ('/2/3', 'muzi_foto', 'width: 20%', 'FOTO'),
-                ('/2/4', 'muzi_video', 'width: 20%', 'VIDEO'),
+                ('/2/0', 'muzi_aktuality menu_link_muzi', 'width: 20%', 'AKTUALITY'),
+                ('/2/1', 'muzi_info menu_link_muzi', 'width: 20%', 'INFO'),
+                ('/2/2', 'muzi_kolektiv menu_link_muzi', 'width: 20%', 'KOLEKTIV'),
+                ('/2/3', 'muzi_foto menu_link_muzi', 'width: 20%', 'FOTO'),
+                ('/2/4', 'muzi_video menu_link_muzi', 'width: 20%', 'VIDEO'),
             ),
             (
                 ('/3/0', 'info_historie', 'width: 50%', 'INFO'),

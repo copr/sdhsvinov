@@ -1,15 +1,25 @@
 {% extends 'blog/bbase.html' %}
+{% block title %}
+    {{ post.title }}
+{% endblock %}
 
+{% block description %}
+  {{ post.title }}
+{% endblock %}
 
 {% block content %}
 <div id="post_l">
    
-    <div class="title">{{ post.title }}</div>
+    <div class="title"><h3>{{ post.title }}</h3></div>
  
     <ul>
         <div class="time">{{ post.created }}</div>
         <div class="body">{{ post.body|safe }}</div>
-         
+        <div class="fb-comments" 
+             data-href="{{ link }}/"
+             data-width="650" data-num-posts="5" 
+             data-colorscheme="dark">
+        </div>
     </ul>
 </div>
 
@@ -36,12 +46,7 @@
 
  
 
-<div class="fb-comments" 
-data-href="{{ link }}/"
 
- data-width="650" data-num-posts="5" 
- data-colorscheme="dark"></div>
- 
 <!--
   
 

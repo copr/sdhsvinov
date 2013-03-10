@@ -1,12 +1,15 @@
 {% extends 'blog/bbase.html' %}
 {% block nav-global %}
+
+<div id="menu">
   <ul>
     {% for link, link_class, link_style, link_name in links %}
       <li>
-      <a href="{{ link }}" class="{{ link_class }}" style="{{ link_style }}"  ><h2>{{ link_name }}</h2></a>
+        <a href="{{ link }}" class="{{ link_class}} menu_link"  style="{{ link_style }}" ><h2>{{ link_name }}</h2></a>
       </li>
     {% endfor %}
   </ul> 
+</div>
 {% endblock %}
 
 

@@ -10,7 +10,23 @@ jmeno, prijmeni, prezdivka, pozice, tym, obrazek
 a { color: #ff0000; }
 a:hover { color: #00ff00; }
 */
+.menu_link_muzi {
+    background: rgba(58, 40, 15, 0.8);
+ /*   -webkit-transition-property: background;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: linear;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-transition: all .5s linear;*/
+    }
+.menu_link {
+    background: rgba(58, 40, 15, 0.8);
+    }
+.menu_link_muzi:hover {
+/*    background: rgb(158,22,116);*/
+    }
 
+#menu {
+    }
 .has {
     display: block;
     background-image: url("/images/menu/hasici/hasici.png");
@@ -35,9 +51,8 @@ html {
     overflow-x: hidden;
     height: 100%;
     }
-
-.fotograf:hover {
-    height: 170px;
+.fotograf {
+    margin-bottom: 20px;
     }
 .hidden{
     display: none;
@@ -64,28 +79,28 @@ pre {
     background: rgba(58, 40, 15, 0.8); 
     width: 650px;
     padding: 20px;
-    margin-bottom: 2px;
-    
-    
-}
-    
-.title a {
+    margin-bottom: 5px;
+    box-shadow: black 4px 6px 20px; 
+}    
+.title, .title a {
     text-decoration: none;
     font-weight: bold;
 }
 
 .dummy {
-    visibility: hidden;
-    width: 1000px;
-    height: 16px; 
+   visibility: hidden;
+   display: block;
+   margin-right: 500px;
+   margin-left: 500px;
+   height: 56px;
    } 
-    
+.commentlink {
+   margin-top: 2px;
+   }
 #cform {
     background: rgba(58, 40, 15, 0.8); 
     margin-top: 5px;
     width: 650px;
-    
-    
     }
 
 #comments {
@@ -109,6 +124,7 @@ pre {
     min-height: 500px;
     padding: 20px;
     overflow: hidden;
+    box-shadow: black 4px 6px 20px;
     }
 #content_galerie a{
     font-size: 0%;
@@ -129,7 +145,6 @@ pre {
     height: 100%; 
     padding-top: 17px;
     padding-bottom: 15px;
-    background: rgba(58, 40, 15, 0.8); 
     color: white;
     text-decoration: none;
     margin-bottom: 5px;
@@ -146,8 +161,9 @@ pre {
     background: rgba(58, 40, 15, 0.8); 
     margin-right: 300px;
     padding: 20px;
-    min-height: 500px;
     text-align: left;
+    overflow: hidden;
+    box-shadow: black 4px 6px 20px;
 }
 
 #menu {
@@ -156,8 +172,17 @@ pre {
   /*  margin-top: 10px; */
     margin-left: 168px;
     margin-right: 300px;
+    height: 51px;
+    box-shadow: black 4px 6px 20px;
 }
-
+footer {
+    width: 500px ;
+    height: 50px;
+    margin-top: 10px; 
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: center;
+    }
 #player {
     background: rgba(58, 40, 15, 0.8); 
     padding: 20px;
@@ -166,6 +191,8 @@ pre {
 
 .logo {
     margin-right: 300px;
+    width: 506px;
+    height: 182px;
     margin-top: 15px;
    } 
 body {
@@ -194,6 +221,7 @@ body {
     margin-bottom: 20px;
     padding: 20px;
     width: 650px;
+    box-shadow: black 4px 6px 20px;
     }
 
 .fb-comments {
@@ -203,8 +231,8 @@ body {
 
 #post {
     background: rgba(58, 40, 15, 0.8); 
-    margin-bottom: 2px;
-    
+    margin-bottom: 5px;
+    box-shadow: black 4px 6px 20px; 
   /*  margin-right: 700px; */
    
     width: 650px;
@@ -224,8 +252,8 @@ body {
 #nav_cont {
     float: left;
     margin-left: 18px;
-    min-height: 500px;
-    margin-right: 4400px;
+    min-height: 600px;
+    margin-right: 440px;
 }
 
 
@@ -252,7 +280,8 @@ nav {
     z-index: 1;
     text-align: left;
     }
-
+nav a {
+    }
 a:active {
     outline: none;
     }
@@ -260,6 +289,7 @@ a:active {
 a:focus {
     -moz-outline-style: none;
     }
+
 
 
 #preload1 {

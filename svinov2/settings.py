@@ -34,6 +34,8 @@ DATABASES = {
 #TINYMCE_COMPRESSOR = True
 TINYMCE_DEFAULT_CONFIG = {
     'theme': "advanced",
+    #'theme_advanced_buttons3_add_before': "tablecontrols,separator"
+    'convert_urls': "true",
     # 'plugins': "spellchecker",
     #   'theme_advanced_buttons3_add': "|,spellchecker",
     'entity_encoding': 'raw',

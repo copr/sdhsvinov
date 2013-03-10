@@ -6,7 +6,7 @@
     {% if Fotografove %}
         {% for Fotograf in Fotografove %}
             <div id ="Fotograf">
-                <a href ="{{ Fotograf.url }}"><img class =fotograf src="/media/{{ Fotograf.obrazek }}" id="{{ Fotograf.jmeno }}" width="150px" height="150px"
+                <a href ="{{ Fotograf.url }}"><img class="fotograf" src="/media/{{ Fotograf.obrazek }}"  width="150px" height="150px"
                 onMouseOver="change1('{{ Fotograf.jmeno }}', '/media/{{ Fotograf.obrazek_hover }}')" 
                 onMouseOut="change1('{{ Fotograf.jmeno }}', '/media/{{ Fotograf.obrazek}}')" /></a>
             </div>

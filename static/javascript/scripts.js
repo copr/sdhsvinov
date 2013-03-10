@@ -24,16 +24,6 @@ function change1(id, src){
 
 var tridy= new Array(".info", ".kolektiv", ".aktuality", ".foto", ".video");	
 
- window.fbAsyncInit = function() {
-  FB.init({
-    appId      : 'blog', // App ID
-    channelUrl : '/channel.html', // Channel File
-    status     : true, // check login status
-    cookie     : true, // enable cookies to allow the server to access the session
-    xfbml      : true  // parse XFBML
-  });
-};
-
 /*(function(d){
   var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
   if (d.getElementById(id)) {return;}
