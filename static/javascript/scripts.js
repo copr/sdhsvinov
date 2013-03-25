@@ -241,11 +241,11 @@ $(document).ready(function(){
     
 
     
-    var cl = $.cookies.get("vybrano");
+var cl = $.cookies.get("vybrano");
     
     
     // hlavni menu
-    
+   
     if($.cookies.get("aktualni_menu")== ".menu_mladez"){
         $(".menu_mladez").css({"background": "#97c113"});    
     }
@@ -280,27 +280,29 @@ $(document).ready(function(){
     
     // muzi
     
-    
+   
     
     
     if(cl == ".muzi_kolektiv"){
-        $(".muzi_kolektiv").css({"background":"#9e1674" }); 
+        $(".muzi_kolektiv").css({"background":"#9e1674" });
+        $(".muzi_kolektiv").css({"-webkit-transition-property":"none" }); 
     }	
     
     if(cl == ".muzi_info"){
         $(".muzi_info").css({"background":"#9e1674" }); 
-    }	
+        $(".muzi_info").css({"-webkit-transition-property":"none" });}	
   
     if(cl == ".muzi_aktuality"){
         $(".muzi_aktuality").css({"background":"#9e1674" }); 
-    }	
+        $(".muzi_aktuality").css({"-webkit-transition-property":"none" }); }	
      
     if(cl == ".muzi_foto"){
         $(".muzi_foto").css({"background":"#9e1674" }); 
-    }
+        $(".muzi_foto").css({"-webkit-transition-property":"none" });}
     
     if(cl == ".muzi_video"){
         $(".muzi_video").css({"background":"#9e1674" }); 
+        $(".muzi_video").css({"-webkit-transition-property":"none" });
     }	
     
     
@@ -368,4 +370,5 @@ $(document).ready(function(){
     // alert($.cookie("aktualni_menu"));
 }
 );
-    
+
+ 

@@ -11,21 +11,21 @@ a { color: #ff0000; }
 a:hover { color: #00ff00; }
 */
 .menu_link_muzi {
-    background: rgba(58, 40, 15, 0.8);
- /*   -webkit-transition-property: background;
-    -webkit-transition-duration: 0.5s;
+    -webkit-transition-property: background;
     -webkit-transition-timing-function: linear;
     -webkit-animation-timing-function: ease-in-out;
-    -webkit-transition: all .5s linear;*/
+    -webkit-transition: all .2s linear;
     }
-.menu_link {
-    background: rgba(58, 40, 15, 0.8);
+#menu .active {
+    background: red !important;
     }
+.menu_link_muzi {
+    }/*nepotrebne*/
 .menu_link_muzi:hover {
-/*    background: rgb(158,22,116);*/
+    background: rgb(158,22,116);
     }
-
 #menu {
+    background: rgba(58,40,15,0.8);
     }
 .has {
     display: block;
@@ -92,7 +92,7 @@ pre {
    display: block;
    margin-right: 500px;
    margin-left: 500px;
-   height: 56px;
+   height: 56px; /* 56px */
    } 
 .commentlink {
    margin-top: 2px;
@@ -113,11 +113,11 @@ pre {
    
     }
     
-.title a:visited,a{
+.title a:visited,a {
     color:white;
     }
 #content_galerie {
-    float: left;
+    float: left; 
     display: block;
     width: 650px;
     background: rgba(58, 40, 15, 0.8);
