@@ -50,10 +50,10 @@ def index(request, id_sekce, id):
     if id_sekce == '4' and id == '1':
         return render_to_response("kalendar/kalendar.html", dict(user=request.user, links=links[int(id_sekce)]))
     if id == '2' and id_sekce == '0':
-        Obrazky = Obrazek.objects.all().filter(kategorie = '1')
+        Obrazky = Obrazek.objects.all().filter(kategorie = 'hasici')
         return render_to_response('galerie/galerie2.html', dict(user=request.user, links = links[int(id_sekce)], Obrazky = Obrazky))
     if id == '3' and id_sekce == '1':
-        Obrazky = Obrazek.objects.all().filter(kategorie = '2')
+        Obrazky = Obrazek.objects.all().filter(kategorie = 'mladez')
         return render_to_response('galerie/galerie2.html', dict(user=request.user, links = links[int(id_sekce)], Obrazky = Obrazky))
 
     if id == '3' and id_sekce == '2':

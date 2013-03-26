@@ -3,8 +3,8 @@ from django.contrib import admin
 from django.forms import ModelForm
 # Create your models here.
 CHOICES=(
-            ('1', 'hasici'),
-            ('2', 'mladez'),
+            ('hasici', 'hasici'),
+            ('mladez', 'mladez'),
 )
 class Fotograf(models.Model):
     jmeno = models.CharField(max_length=100)
@@ -16,6 +16,8 @@ class Fotograf(models.Model):
 class Obrazek(models.Model):
     obrazek = models.ImageField(upload_to='photos/galerie')
     kategorie = models.CharField(max_length=20, choices=CHOICES)
+    def __unicode__(self):
+        return unicode("%s" % self.kategorie)
 
 #admin.site.register(Fotograf)
 #admin.site.register(Obrazek)

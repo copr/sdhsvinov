@@ -61,7 +61,7 @@ pre {
     white-space: -pre-wrap;
     white-space: pre-wrap;
     }
-.des{
+.hasici, .mladez {
     margin: 5px;
     width: 150px;
     height: 150px;
@@ -121,7 +121,6 @@ pre {
     display: block;
     width: 650px;
     background: rgba(58, 40, 15, 0.8);
-    min-height: 500px;
     padding: 20px;
     overflow: hidden;
     box-shadow: black 4px 6px 20px;
@@ -132,8 +131,8 @@ pre {
     
 .co {
     float: left; 
-    min-height: 50px;    
     background: rgba(58, 40, 15, 0.54);
+    min-height: 50px;    
     width: 500px;
     margin-bottom: 5px;
     
@@ -252,8 +251,8 @@ body {
 #nav_cont {
     float: left;
     margin-left: 18px;
-    min-height: 600px;
     margin-right: 440px;
+    overflow: hidden;
 }
 
 
@@ -289,8 +288,6 @@ a:active {
 a:focus {
     -moz-outline-style: none;
     }
-
-
 
 #preload1 {
         background: url(http://sdhsvinov.cz/static/images/menu/home/HOME1.png) no-repeat -9999px -9999px;

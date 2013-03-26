@@ -24,23 +24,13 @@ function change1(id, src){
 
 var tridy= new Array(".info", ".kolektiv", ".aktuality", ".foto", ".video");	
 
-/*(function(d){
-  var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-  if (d.getElementById(id)) {return;}
-  js = d.createElement('script'); js.id = id; js.async = true;
-  js.src = "//connect.facebook.net/en_US/all.js";
-  ref.parentNode.insertBefore(js, ref);
-}(document));
-*/
 $(document).ready(function(){
 
     /////////hlavni menu
     
     
-    // Cufon.replace("section.text a", { hover: true });
-    // Cufon.replace("h1, h2, h3, h4, section, a");
-    
-   
+    $(".hasici").colorbox({rel:'hasici', maxWidth:'1200px', maxHeight:'700px', top:'5%', left:'3%' });
+    $(".mladez").colorbox({rel:'mladez', maxWidth:'1200px', maxHeight:'700px', top:'5%', left:'3%' }); 
 
     $(".menu_hasici").click(
         function(){

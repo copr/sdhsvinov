@@ -9,8 +9,8 @@
     <link href="/static/css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="/static/css/s.css" media="screen and (min-width: 1900px)" />
     <link rel="stylesheet" type="text/css" href="/static/css/style_1024.css" media="screen and (max-width: 1200px)" />
-    <link rel="stylesheet" type="text/css" href="/static/css/style_bet.css" media="screen and (min-width: 1500px) 
-    and (max-width: 1850px)" />
+    <link rel="stylesheet" type="text/css" href="/static/css/style_bet.css" media="screen and (min-width: 1500px) and (max-width: 1850px)" />
+    <link rel="stylesheet" type="text/css" href="/static/javascript/colorbox/colorbox.css" />
 
     <script src="/static/javascript/scripts.js" type="text/javascript"></script>
 
@@ -21,13 +21,11 @@
     <meta property="fb:admins" content="100000119014879" />
     <script src="/static/javascript/jQuery.js"></script>
     <script src="/static/javascript/jquery.cookies.2.2.0.js"></script>
-    <script src="/static/javascript/scripts.js"></script>
-    <script src="/static/javascript/lightbox.js"></script>
-    <script src="/static/javascript/tinymce/jscripts/tiny_mce/tiny_mce.js"></script>
-
+    <script src="/static/javascript/colorbox/jquery.colorbox.js"></script>
+    <!-- <script src="/static/javascript/lightbox.js"></script> -->
     <meta name="description" 
     content="{% block description %}Stránky SDH Svinov{% endblock %}"/>
-    
+    <script src="/static/javascript/scripts.js"></script>
     
     <style type="text/css">
 @font-face {font-family: champagne;
@@ -67,27 +65,27 @@
         
      <nav>
      <ul>
-       <li><a href="/"><img src="/static/images/menu/home/HOME1.png" class="menu_home" alt="5" height="69" width="61" alt="Chyba" 
+       <li><a href="/"><img src="/static/images/menu/home/HOME1.png" class="menu_home" height="69" width="61" alt="Chyba" 
           onMouseOver="change_img('nav_cont', '/static/images/menu/home/HOME.png', '0', '61')" 
           onMouseOut="change_img('nav_cont', '/static/images/menu/home/HOME1.png', '0', '61')" /></a></li>
                 
-       <li><a href="/0/0"><img src="/static/images/menu/hasici/hasici.png" class="menu_hasici" alt="5" height="49" width="61" alt="Chyba"
+       <li><a href="/0/0"><img src="/static/images/menu/hasici/hasici.png" class="menu_hasici" height="49" width="61" alt="Chyba"
           onMouseOver="change_img('nav_cont', '/static/images/menu/hasici/hasici_rozbalene.jpeg', '1', '200')" 
           onMouseOut="change_img('nav_cont', '/static/images/menu/hasici/hasici.png', '1', '61')" /></a></li>
                 
-       <li><a href="/1/0"><img src="/static/images/menu/mladez/mladez.png" class="menu_mladez" alt="5" height="49" width="61" alt="Chyba"
+       <li><a href="/1/0"><img src="/static/images/menu/mladez/mladez.png" class="menu_mladez" height="49" width="61" alt="Chyba"
           onMouseOver="change_img('nav_cont', '/static/images/menu/mladez/mladez_rozbalene.png', '2', '228')" 
           onMouseOut="change_img('nav_cont', '/static/images/menu/mladez/mladez.png', '2', '61')"/></a></li>
                 
-       <li><a href="/2/0"><img src="/static/images/menu/muzi/muzi.png" class="menu_muzi" alt="5" height="49" width="61" 
+       <li><a href="/2/0"><img src="/static/images/menu/muzi/muzi.png" class="menu_muzi" height="49" width="61" 
           onMouseOver="change_img('nav_cont', '/static/images/menu/muzi/muzi_rozbalene.png', '3', '171')" 
           onMouseOut="change_img('nav_cont', '/static/images/menu/muzi/muzi.png', '3', '61')" /></a></li>
                 
-       <li><a href="/3/0"><img src="/static/images/menu/historie/historie.png" class="menu_historie" alt="5" height="49" width="61" alt="Chyba"
+       <li><a href="/3/0"><img src="/static/images/menu/historie/historie.png" class="menu_historie" height="49" width="61" alt="Chyba"
           onMouseOver="change_img('nav_cont', '/static/images/menu/historie/historie_rozbalene.png', '4', '240')" 
           onMouseOut="change_img('nav_cont', '/static/images/menu/historie/historie.png', '4', '61')"  /></a></li>
                 
-       <li><a href="/4/0"><img src="/static/images/menu/ostatni/OSTATN1.png" class="menu_odkazy" alt="5" height="49" width="61" alt="Chyba"
+       <li><a href="/4/0"><img src="/static/images/menu/ostatni/OSTATN1.png" class="menu_odkazy" height="49" width="61" alt="Chyba"
           onMouseOver="change_img('nav_cont', '/static/images/menu/ostatni/OSTATN.png', '5', '244')" 
           onMouseOut="change_img('nav_cont', '/static/images/menu/ostatni/OSTATN1.png', '5', '61')" /></a></li>
         </ul>
@@ -99,15 +97,15 @@
      </div>
    </div>
    <footer>
-   <div class="fb-like" data-href="http://www.sdhsvinov.cz"
-        data-send="false" data-width="450" data-show-faces="true" data-font="arial"></div>
+   <!--<div class="fb-like" data-href="http://www.sdhsvinov.cz"
+           data-send="false" data-width="450" data-show-faces="true" data-font="arial"></div>-->
    </footer>
-   <img class=hidden src='/static/images/menu/historie/historie_rozbalene.png' />
-   <img class=hidden src='/static/images/menu/ostatni/OSTATN.png' />
-   <img class=hidden src='/static/images/menu/muzi/muzi.png' />
-   <img class=hidden src='/static/images/menu/mladez/mladez_rozbalene.png' />
-   <img class=hidden src='/static/images/menu/mladez/hasici_rozbalene.png' />
-   <img class=hidden src='/static/images/menu/home/HOME.png' />
+   <img class=hidden src='/static/images/menu/historie/historie_rozbalene.png' alt="chyba" />
+   <img class=hidden src='/static/images/menu/ostatni/OSTATN.png' alt="chyba" />
+   <img class=hidden src='/static/images/menu/muzi/muzi.png' alt="chyba" />
+   <img class=hidden src='/static/images/menu/mladez/mladez_rozbalene.png' alt="chyba" />
+   <img class=hidden src='/static/images/menu/mladez/hasici_rozbalene.png' alt="chyba" />
+   <img class=hidden src='/static/images/menu/home/HOME.png' alt="chyba" />
 
 </body>
 </html>
