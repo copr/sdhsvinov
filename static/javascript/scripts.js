@@ -29,8 +29,8 @@ $(document).ready(function(){
     /////////hlavni menu
     
     
-    $(".hasici").colorbox({rel:'hasici', maxWidth:'1200px', maxHeight:'700px', top:'5%', left:'3%' });
-    $(".mladez").colorbox({rel:'mladez', maxWidth:'1200px', maxHeight:'700px', top:'5%', left:'3%' }); 
+    $(".hasici").colorbox({rel:'hasici', maxWidth:'1200px', maxHeight:'700px', top:'5%', left:'10%' });
+    $(".mladez").colorbox({rel:'mladez', maxWidth:'1200px', maxHeight:'700px', top:'5%', left:'10%' }); 
 
     $(".menu_hasici").click(
         function(){
