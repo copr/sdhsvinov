@@ -186,7 +186,8 @@ footer {
 #player {
     background: rgba(58, 40, 15, 0.8); 
     padding: 20px;
-    z-index: -5px;  
+    z-index: -5px; 
+    box-shadow: black 4px 6px 20px;
     }
 
 .logo {
@@ -229,7 +230,7 @@ body {
 
 #post {
     background: rgba(58, 40, 15, 0.8); 
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     box-shadow: black 4px 6px 20px; 
   /*  margin-right: 700px; */
    
