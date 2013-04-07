@@ -275,25 +275,29 @@ var cl = $.cookies.get("vybrano");
     
     if(cl == ".muzi_kolektiv"){
         $(".muzi_kolektiv").css({"background":"#9e1674" });
-        $(".muzi_kolektiv").css({"-webkit-transition-property":"none" }); 
+        $(".muzi_kolektiv").css({"-webkit-transition-property":"none" });
+        $(".muzi_kolektiv").css({"-moz-transition-property":"none" }); 
     }	
     
     if(cl == ".muzi_info"){
         $(".muzi_info").css({"background":"#9e1674" }); 
-        $(".muzi_info").css({"-webkit-transition-property":"none" });}	
+        $(".muzi_info").css({"-webkit-transition-property":"none" });
+    $(".muzi_info").css({"-moz-transition-property":"none" }); }	
   
     if(cl == ".muzi_aktuality"){
         $(".muzi_aktuality").css({"background":"#9e1674" }); 
-        $(".muzi_aktuality").css({"-webkit-transition-property":"none" }); }	
+        $(".muzi_aktuality").css({"-webkit-transition-property":"none" }); 
+         $(".muzi_aktuality").css({"-moz-transition-property":"none" });}	
      
     if(cl == ".muzi_foto"){
         $(".muzi_foto").css({"background":"#9e1674" }); 
-        $(".muzi_foto").css({"-webkit-transition-property":"none" });}
+        $(".muzi_foto").css({"-webkit-transition-property":"none" });
+    $(".muzi_foto").css({"-moz-transition-property":"none" });}
     
     if(cl == ".muzi_video"){
         $(".muzi_video").css({"background":"#9e1674" }); 
         $(".muzi_video").css({"-webkit-transition-property":"none" });
-    }	
+    $(".muzi_video").css({"-moz-transition-property":"none" });}	
     
     
     // /muzi
@@ -302,41 +306,61 @@ var cl = $.cookies.get("vybrano");
     
     if(cl == ".aktuality_mladez"){
         $(".aktuality_mladez").css({"background":"#97c113" }); 
-    }	
+        $(".aktuality_mladez").css({"-webkit-transition-property":"none" });
+        $(".aktuality_mladez").css({"-moz-transition-property":"none" });}	
     
     if(cl == ".info_mladez"){
         $(".info_mladez").css({"background":"#97c113" }); 
-    }	
+        $(".info_mladez").css({"-webkit-transition-property":"none" });
+        $(".info_mladez").css({"-moz-transition-property":"none" });}	
+    
+	
   
     if(cl == ".kolektiv_mladez"){
         $(".kolektiv_mladez").css({"background":"#97c113" }); 
-    }	
+    $(".kolektiv_mladez").css({"-webkit-transition-property":"none" });
+        $(".kolektiv_mladez").css({"-moz-transition-property":"none" });}	
+    
+	
      
     if(cl == ".foto_mladez"){
         $(".foto_mladez").css({"background":"#97c113" }); 
-    }
+        $(".foto_mladez").css({"-webkit-transition-property":"none" });
+        $(".foto_mladez").css({"-moz-transition-property":"none" });}	
+    
+
     
     if(cl == ".download_mladez"){
         $(".download_mladez").css({"background":"#97c113" }); 
-    }	
+        $(".download_mladez").css({"-webkit-transition-property":"none" });
+        $(".download_mladez").css({"-moz-transition-property":"none" });}	
     
     if(cl == ".odkazy"){
         $(".odkazy").css({"background":"#382690" });
-    }
+        $(".odkazy").css({"-webkit-transition-property":"none" });
+        $(".odkazy").css({"-moz-transition-property":"none" });}	
+    
     
     // hasici
     
     if(cl == ".aktuality_hasici"){
         $(".aktuality_hasici").css({"background":"#ccc213" }); 
-    }	
+        $(cl).css({"-webkit-transition-property":"none" });
+        $(cl).css({"-moz-transition-property":"none" });}	
+    
+
     
     if(cl == ".info_hasici"){
         $(".info_hasici").css({"background":"#ccc213" }); 
-    }	
+        $(cl).css({"-webkit-transition-property":"none" });
+        $(cl).css({"-moz-transition-property":"none" });}	
+    
     
     if(cl == ".foto_hasici"){
         $(".foto_hasici").css({"background":"#ccc213" }); 
-    }
+        $(cl).css({"-webkit-transition-property":"none" });
+        $(cl).css({"-moz-transition-property":"none" });}	
+    
     
     // /hasici
     
@@ -344,19 +368,28 @@ var cl = $.cookies.get("vybrano");
     
     if(cl == ".info_historie"){
         $(".info_historie").css({"background":"#5e1f8c" }); 
-    }	
+        $(cl).css({"-webkit-transition-property":"none" });
+        $(cl).css({"-moz-transition-property":"none" });}	
     
     if(cl == ".statistiky_historie"){
         $(".statistiky_historie").css({"background":"#5e1f8c" }); 
-    }
+        $(cl).css({"-webkit-transition-property":"none" });
+        $(cl).css({"-moz-transition-property":"none" });}	
     
-    //ostatni 
+    
+    //osta}tni 
     if(cl == ".kalendar"){
         $(".kalendar").css({"background":"rgb(56,38,144)" }); 
-    }
+        $(cl).css({"-webkit-transition-property":"none" });
+        $(cl).css({"-moz-transition-property":"none" });}	
+    
+
     if(cl == ".odkazy"){
         $(".odkazy").css({"background":"rgb(56,38,144)" }); 
-    }
+        $(cl).css({"-webkit-transition-property":"none" });
+        $(cl).css({"-moz-transition-property":"none" });}	
+    
+
     // alert($.cookie("aktualni_menu"));
 }
 );
