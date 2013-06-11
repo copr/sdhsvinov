@@ -18,7 +18,7 @@ links = [('5', 'seznam', 'static/images/menu/hasici/hasici.png', ''),]
 def main(request):
     """Main listing."""
     posts = Post.objects.all().order_by("-created").filter(uvodni_strana=True)
-    paginator = Paginator(posts, 5)
+    paginator = Paginator(posts, 10)
 
     try: page = int(request.GET.get("page", '1'))
     except ValueError: page = 1

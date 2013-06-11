@@ -10,16 +10,16 @@ import re
 
 links = (
             (
-                ('/0/0', 'aktuality_hasici', 'width: 33.33%', 'AKTUALITY'),
-                ('/0/1', 'info_hasici', 'width: 33.33%', 'INFO'),
-                ('/0/2', 'foto_hasici', 'width: 33.33%', 'FOTO'),
+                ('/0/0', 'aktuality_hasici menu_link_hasici', 'width: 33.33%', 'AKTUALITY'),
+                ('/0/1', 'info_hasici menu_link_hasici', 'width: 33.33%', 'INFO'),
+                ('/0/2', 'foto_hasici menu_link_hasici', 'width: 33.33%', 'FOTO'),
             ),
             (
-                ('/1/0', 'aktuality_mladez', 'width: 20%', 'AKTUALITY'),
-                ('/1/1', 'info_mladez', 'width: 20%', 'INFO'),
-                ('/1/2', 'kolektiv_mladez', 'width: 20%', 'KOLEKTIV'),
-                ('/1/3', 'foto_mladez', 'width: 20%', 'FOTO'),
-                ('/1/4', 'download_mladez', 'width: 20%', 'DOWNLOAD'),
+                ('/1/0', 'aktuality_mladez menu_link_mladez', 'width: 20%', 'AKTUALITY'),
+                ('/1/1', 'info_mladez menu_link_mladez', 'width: 20%', 'INFO'),
+                ('/1/2', 'kolektiv_mladez menu_link_mladez', 'width: 20%', 'KOLEKTIV'),
+                ('/1/3', 'foto_mladez menu_link_mladez', 'width: 20%', 'FOTO'),
+                ('/1/4', 'download_mladez menu_link_mladez', 'width: 20%', 'DOWNLOAD'),
             ),
             (
                 ('/2/0', 'muzi_aktuality menu_link_muzi', 'width: 20%', 'AKTUALITY'),
@@ -29,12 +29,12 @@ links = (
                 ('/2/4', 'muzi_video menu_link_muzi', 'width: 20%', 'VIDEO'),
             ),
             (
-                ('/3/0', 'info_historie', 'width: 50%', 'INFO'),
-                ('/3/1', 'statistiky_historie', 'width: 50%', 'STATISTIKY'),
+                ('/3/0', 'info_historie menu_link_historie', 'width: 50%', 'INFO'),
+                ('/3/1', 'statistiky_historie menu_link_historie', 'width: 50%', 'STATISTIKY'),
             ),
             (
-                ('/4/0', 'odkazy', 'width: 50%', 'ODKAZY'),
-                ('/4/1', 'kalendar', 'width: 50%', 'KALENDÁŘ'),
+                ('/4/0', 'odkazy ostatni', 'width: 50%', 'ODKAZY'),
+                ('/4/1', 'kalendar ostatni', 'width: 50%', 'KALENDÁŘ'),
             ),
         )
 stranka={
@@ -72,7 +72,7 @@ def index(request, id_sekce, id):
                         }
 
         posts = Post.objects.all().order_by("-created").filter(category = category_dict[id_sekce])
-        paginator = Paginator(posts, 5)
+        paginator = Paginator(posts, 10)
 
         try: page = int(request.GET.get("page", '1'))
         except ValueError: page = 1

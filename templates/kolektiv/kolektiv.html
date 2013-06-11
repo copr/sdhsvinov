@@ -2,9 +2,11 @@
 
 {% block content %}
     
-    {% if clenove %}
-        {% for clen in clenove %}
-            <div id="clen">
+{% if clenove %}
+         <ul>
+         {% for clen in clenove %}
+
+            <li class="clen">
                 <img src="/media/{{ clen.obrazek }}" class="clen_kolektiv"></img>
                 <table>
                     <tr><td>Jméno: {{ clen.jmeno }}</td></tr>
@@ -13,7 +15,8 @@
                     <tr><td>Pozice: {{ clen.pozice }}</td></tr>
                     <tr><td>Tým: {{ clen.tym }}</td></tr>
                 </table>
-            </div>
-        {% endfor %}
+            </li>
+            {% endfor %}
+         <ul>
     {% endif %}
 {% endblock %}
