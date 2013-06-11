@@ -81,7 +81,8 @@ pre {
     margin: 5px;
     width: 150px;
     height: 150px;
-    float left;
+    display: block;
+    float: left;
     }
 .clen_kolektiv { 
     float: left;

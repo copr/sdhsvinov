@@ -2,7 +2,7 @@
 
 
 {% block content %}
-    <div id ="content_galerie">
+    <div id="content_sekce">
     {% for Obrazek in Obrazky %}
           <a class="{{  Obrazek.kategorie }}" href="/media/{{ Obrazek.obrazek }}" >
               <img src="/media/{{ Obrazek.obrazek }}" width="150px" height="150px" />
