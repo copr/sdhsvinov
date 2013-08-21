@@ -34,7 +34,6 @@ class PostAdmin(admin.ModelAdmin):
   #    js = ('/static/javascript/tinymce/jscripts/tiny_mce/tiny_mce.js',
   #           '/static/javascript/tinymce/jscripts/tiny_mce/textareas.js',
   #           )
-    
 class Comment(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     author = models.CharField(max_length=60)
