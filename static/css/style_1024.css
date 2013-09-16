@@ -4,9 +4,12 @@ body {
     }
 
 .logo {
-    margin-left: 250px;
     }
 
 nav {
     margin-left: 31px;
     }
+
+#post {
+   margin-right: 200px;
+   }
