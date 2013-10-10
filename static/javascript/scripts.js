@@ -1,6 +1,6 @@
 ﻿function change_img(id, img, poradi, width){
+    //document.getElementById(id).getElementsByTagName("img")[poradi].width = width;
     document.getElementById(id).getElementsByTagName("img")[poradi].src = img;
-    document.getElementById(id).getElementsByTagName("img")[poradi].width = width;
 }
   var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-38700494-1']);

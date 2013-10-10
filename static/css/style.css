@@ -310,23 +310,11 @@ a:focus {
     -moz-outline-style: none;
     }
 
-#preload1 {
-        background: url(http://sdhsvinov.cz/static/images/menu/home/HOME1.png) no-repeat -9999px -9999px;
+div #preloaded {
+    position: absolute;
+    overflow: hidden;
+    left: -9999px;
+    top: -9999px;
+    height: 1px;
+    width: 1px;
 }
-
-#preload2 {
-        background: url(http://sdhsvinov.cz/static/images/menu/hasici/hasici_rozbalene.png) no-repeat -9999px -9999px;
-}
- 
- #preload3 {
-        background: url(http://sdhsvinov.cz/static/images/menu/mladez/mladez_rozbalene.png) no-repeat -9999px -9999px;
-}
-#preload4 {
-        background: url(http://sdhsvinov.cz/static/images/menu/muzi/muzi_rozbalene.png) no-repeat -9999px -9999px;
-}
-#preload5 {
-        background: url(http://sdhsvinov.cz/static/images/menu/historie/historie_rozbalene.png) no-repeat -9999px -9999px;
-}
-#preload6 {
-        background: url('http://sdhsvinov.cz/static/images/menu/ostatni/OSTATN.png') no-repeat -9999px -9999px;
-} 
