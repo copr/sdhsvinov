@@ -5,8 +5,7 @@ from blog.models import *
 from kolektiv.models import *
 from galerie.models import *
 from django.core.exceptions import ObjectDoesNotExist
-
-import re
+from functions.string_process import removeOtherP
 
 links = (
             (
@@ -79,24 +78,15 @@ def index(request, id_sekce, id):
 
         i = 0
         for post in posts:
-            m = re.match("<p>.*</p>", posts[i].body, re.DOTALL)
-            if m:
-                posts[i].body = removeOtherP(m.group())
-            else:
-                table = re.match("<table.*>.*</table>", posts[i].body, re.DOTALL)
-                if table:
-                    posts[i].body = table.group()
-                else:
-                    posts[i].body = ""
-            i += 1
-
+            posts[i].body = removeOtherP(posts[i].body)
+            i = i + 1
         try:
             posts = paginator.page(page)
         except (InvalidPage, EmptyPage):
-            posts = paginator.page(paginator.num_pages) 
+            posts = paginator.page(paginator.num_pages)
 
         return render_to_response("blog/list_mine.html", dict(posts=posts, user=request.user, links = links[int(id_sekce)]))
-   
+
     if id_sekce == '2' and id == '2':
         clenove = Clen_kolektivu.objects.all().filter(tym__contains=u'Muži')
         return render_to_response("kolektiv/kolektiv.html", dict(clenove = clenove, user=request.user, links = links[int(id_sekce)]))
@@ -115,7 +105,3 @@ def index(request, id_sekce, id):
     return render_to_response('zaklad.html', dict(obsah = 'Chyba', links = links[int(id_sekce)]))
 
 
-def removeOtherP(string):
-    """ Function to remove all paragraps after the first one """
-    index = string.find('</p>')
-    return string[:(index+4)]

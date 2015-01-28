@@ -1,5 +1,4 @@
 ﻿function change_img(id, img, poradi, width){
-    //document.getElementById(id).getElementsByTagName("img")[poradi].width = width;
     document.getElementById(id).getElementsByTagName("img")[poradi].src = img;
 }
   var _gaq = _gaq || [];
@@ -27,7 +26,31 @@ var tridy= new Array(".info", ".kolektiv", ".aktuality", ".foto", ".video");
 $(document).ready(function(){
 
     /////////hlavni menu
-    
+    if(document.URL == "http://sdhsvinov.cz/") {
+        $.cookies.set("aktualni_menu", "");
+        $.cookies.set("vybrano", "");
+    }
+    if(document.URL.slice(0,22) == "http://sdhsvinov.cz/0/") {
+        $.cookies.set("aktualni_menu", ".menu_hasici");
+        $.cookies.set("vybrano", ".aktuality_hasici");
+    }
+    if(document.URL.slice(0,22) == "http://sdhsvinov.cz/1/") {
+        $.cookies.set("aktualni_menu", ".menu_mladez");
+        $.cookies.set("vybrano",".aktuality_mladez");
+    }
+    if(document.URL.slice(0,22) == "http://sdhsvinov.cz/2/") {
+        $.cookies.set("aktualni_menu", ".menu_muzi");
+        $.cookies.set("vybrano", ".muzi_aktuality");
+    }
+    if(document.URL.slice(0,22) == "http://sdhsvinov.cz/3/") {
+        $.cookies.set("aktualni_menu", ".menu_historie");
+        $.cookies.set("vybrano", ".info_historie");
+    }
+    if(document.URL.slice(0,22) == "http://sdhsvinov.cz/4/") {
+        $.cookies.set("aktualni_menu", ".menu_odkazy");
+        $.cookies.set("vybrano", ".odkazy");
+    }
+
     
     $(".hasici").colorbox({rel:'hasici', maxWidth:'1200px', maxHeight:'600px', top:'1%', left:'50%', right:'50%' });
     $(".mladez").colorbox({rel:'mladez', maxWidth:'1200px', maxHeight:'600px', top:'1%', left:'50%', right:'50%' }); 
@@ -291,6 +314,7 @@ var cl = $.cookies.get("vybrano");
      
     if(cl == ".muzi_foto"){
         $(".muzi_foto").css({"background":"#9e1674" }); 
+    //document.getElementById(id).getElementsByTagName("img")[poradi].width = width;
         $(".muzi_foto").css({"-webkit-transition-property":"none" });
     $(".muzi_foto").css({"-moz-transition-property":"none" });}
     
@@ -303,6 +327,8 @@ var cl = $.cookies.get("vybrano");
     // /muzi
     
     // mladez
+    //document.getElementById(id).getElementsByTagName("img")[poradi].width = width;
+    //document.getElementById(id).getElementsByTagName("img")[poradi].width = width;
     
     if(cl == ".aktuality_mladez"){
         $(".aktuality_mladez").css({"background":"#97c113" }); 

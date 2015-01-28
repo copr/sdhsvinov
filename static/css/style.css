@@ -245,20 +245,16 @@ body {
 
 .fb-comments {
     margin-top: 60px;
-  
     }
 
 #post {
     background: rgba(58, 40, 15, 0.8); 
     margin-bottom: 10px;
     box-shadow: black 4px 6px 20px; 
-  /*  margin-right: 700px; */
-   
     width: 650px;
     position: relative;
     float: left;
     padding: 20px;
-   
 }
 .time{
      margin-bottom: 20px;
@@ -282,7 +278,7 @@ body {
     }
 
 #content {
-    overflow: hidden;
+   /* overflow: hidden; */
     margin-left: 150px;
     text-align: left;
     height: 100%;

@@ -7,6 +7,7 @@ from django.core.context_processors import csrf
 from django.template import RequestContext
 from django.http import HttpResponseRedirect
 from django.core.exceptions import ObjectDoesNotExist
+from functions.string_process import removeOtherP
 
 from blog.models import *
 
@@ -25,17 +26,8 @@ def main(request):
 
     i = 0
     for post in posts:
-        m = re.match("<p>.+</p>", posts[i].body, re.DOTALL)
-        if m:
-            posts[i].body = removeOtherP(m.group())
-        else:
-            table = re.match("<table.*>.*</table>", posts[i].body, re.DOTALL)
-            if table:
-                posts[i].body = table.group()
-            else:
-                posts[i].body = ""
-        i += 1
-
+        posts[i].body = removeOtherP(posts[i].body)
+        i = i + 1
     try:
         posts = paginator.page(page)
     except (InvalidPage, EmptyPage):
@@ -79,7 +71,4 @@ def add_comment(request, pk):
     
     return HttpResponseRedirect(reverse("blog.views.post", args=[pk]))
 
-def removeOtherP(string):
-    """ Function to remove all paragraps after the first one """
-    index = string.find('</p>')
-    return string[:(index+4)]
+
