@@ -294,7 +294,7 @@ nav {
     position: fixed; 
     z-index: 1;
     text-align: left;
-    /*margin-left: 1px;*/
+    margin-left: 1px;
     }
 nav a {
     }
