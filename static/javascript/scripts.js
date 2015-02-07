@@ -1,5 +1,17 @@
-﻿function change_img(id, img, poradi, width){
+﻿function change_img_in(id, img, poradi, width){
     document.getElementById(id).getElementsByTagName("img")[poradi].src = img;
+    document.getElementById(id).getElementsByTagName("img")[poradi].className += " side_shadow"; 
+}
+function change_img_home(id, img, poradi, width){
+    document.getElementById(id).getElementsByTagName("img")[poradi].src = img;
+}
+
+
+function change_img_out(id, img, poradi, width) {
+    myid = document.getElementById(id).getElementsByTagName("img")[poradi];
+    myid.src = img;
+    myid.className = myid.className.replace( /(?:^|\s)side_shadow(?!\S)/g, '');
+    
 }
   var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-38700494-1']);
@@ -32,23 +44,23 @@ $(document).ready(function(){
     }
     if(document.URL.slice(0,22) == "http://sdhsvinov.cz/0/") {
         $.cookies.set("aktualni_menu", ".menu_hasici");
-        $.cookies.set("vybrano", ".aktuality_hasici");
+      /*  $.cookies.set("vybrano", ".aktuality_hasici");*/
     }
     if(document.URL.slice(0,22) == "http://sdhsvinov.cz/1/") {
         $.cookies.set("aktualni_menu", ".menu_mladez");
-        $.cookies.set("vybrano",".aktuality_mladez");
+        /*$.cookies.set("vybrano",".aktuality_mladez");*/
     }
     if(document.URL.slice(0,22) == "http://sdhsvinov.cz/2/") {
         $.cookies.set("aktualni_menu", ".menu_muzi");
-        $.cookies.set("vybrano", ".muzi_aktuality");
+        /*$.cookies.set("vybrano", ".muzi_aktuality");*/
     }
     if(document.URL.slice(0,22) == "http://sdhsvinov.cz/3/") {
         $.cookies.set("aktualni_menu", ".menu_historie");
-        $.cookies.set("vybrano", ".info_historie");
+        /*$.cookies.set("vybrano", ".info_historie");*/
     }
     if(document.URL.slice(0,22) == "http://sdhsvinov.cz/4/") {
         $.cookies.set("aktualni_menu", ".menu_odkazy");
-        $.cookies.set("vybrano", ".odkazy");
+        /*$.cookies.set("vybrano", ".odkazy");*/
     }
 
     
@@ -260,31 +272,33 @@ var cl = $.cookies.get("vybrano");
     // hlavni menu
    
     if($.cookies.get("aktualni_menu")== ".menu_mladez"){
-        $(".menu_mladez").css({"background": "#97c113"});    
+       $(".menu_mladez").css({"background": "#97c113"});   
+       $(".menu_mladez").addClass("shadow2");
     }
 
     if($.cookies.get("aktualni_menu")== ".menu_muzi"){
         $(".menu_muzi").css({"background": "rgb(158,22,116)"});    
+        $(".menu_muzi").addClass("shadow2");
     }
 
-    if($.cookies.get("aktualni_menu")== ".menu_mladez"){
-        $(".menu_mladez").css({"background": "#97c113"});    
-    }
-    
     if($.cookies.get("aktualni_menu")== ".menu_hasici"){
-        $(".menu_hasici").css({"background": "#ccc213"});    
+        $(".menu_hasici").css({"background": "#ccc213"});
+$(".menu_hasici").addClass("shadow2");
     }
     
     if($.cookies.get("aktualni_menu")== ".menu_odkazy"){
-        $(".menu_odkazy").css({"background": "#382690"});    
+        $(".menu_odkazy").css({"background": "#382690"});
+$(".menu_odkazy").addClass("shadow2");
     }
     
     if($.cookies.get("aktualni_menu")== ".menu_historie"){
         $(".menu_historie").css({"background": "#5e1f8c"});    
+$(".menu_historie").addClass("shadow2");
     }
     
     if($.cookies.get("aktualni_menu")== ".menu_hasici"){
         $(".menu_hasici").css({"background": "#ccc213"});    
+$(".menu_mladez").addClass("side_shadow2");
     }
 
     
@@ -292,8 +306,6 @@ var cl = $.cookies.get("vybrano");
     // /hlavni menu
     
     // muzi
-    
-   
     
     
     if(cl == ".muzi_kolektiv"){
